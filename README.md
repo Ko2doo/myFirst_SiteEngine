@@ -1,2 +1,2 @@
-# myFisrt_SiteEngine
+# myFirst_SiteEngine
 Мой первый движок сайта, написанный по видео урокам
