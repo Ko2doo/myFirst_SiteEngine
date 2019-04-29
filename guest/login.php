@@ -1,7 +1,7 @@
 <?php top( 'Вход' ) ?>
 
 	<h1 class="headline-form">Вход</h1>
-	<div id="logIn">
+	<div id="formBlock">
 		<input type="text" placeholder="Логин" id="email">
 		<input type="password" placeholder="Пароль" id="password">
 		<input type="text" placeholder="<?captcha_show()?>" id="captcha">

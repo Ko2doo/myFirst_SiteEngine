@@ -116,10 +116,19 @@ else if ($_POST['confirm_f']) {
 		if ( $_SESSION['confirm']['code'] != $_POST['code'] )
 			message('Код подтверждения регистрации указан неверно');
 
-		// записываем пользователей в mysql
-		mysqli_query($CONNECT, "INSERT INTO `users` (`email`, `password`) VALUES ('".$_SESSION['confirm']['email']."', '".$_SESSION['confirm']['password']."', '', 0)");
+		# вывод ошибок:
+		// @ini_set('display_errors', 1);
+		// @ini_set('display_startup_errors', 1);
+		// error_reporting(E_ALL);
 
-			go('login');
+
+		# Для инъекции данных в БД
+		$injectDB = "INSERT INTO `users` (`email`, `password`, `ip`, `protected`) VALUES ('".$_SESSION['confirm']['email']."', '".$_SESSION['confirm']['password']."', '', 0)";
+
+		// записываем пользователей в mysql (БД)
+		mysqli_query($CONNECT, $injectDB);
+		
+		go('login');
 	}
 
 	//Условие для восстановления пароля:

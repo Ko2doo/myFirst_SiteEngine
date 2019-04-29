@@ -134,12 +134,14 @@ function top($title) {
 			
 			<div class="menu">
 				<div class="link-wraper">
-					<ul class="list-link">';
+					<ul class="list-link">
+					<li><a href="/home">Главная</a></li>
+					<li><a href="/contact">Обратная связь</a></li>
+					';
 				
 				if ($_SESSION['id']) {
 					echo '
 						
-							<li><a href="/">Главная</a></li>
 							<li><a href="/logout">Выход</a></li>
 							<li><a href="/profile">Профиль</a></li>
 							<li><a href="/history">История</a></li>
@@ -147,7 +149,6 @@ function top($title) {
 				}
 				else
 					echo '
-						<li><a href="/">Главная</a></li>
 						<li><a href="/login">Вход</a></li>
 						<li><a href="/register">Регистрация</a></li>
 						<li><a href="/recovery">Восстановление пароля</a></li>

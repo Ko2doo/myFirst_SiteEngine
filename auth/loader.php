@@ -32,7 +32,22 @@ if ( !mysqli_num_rows($query) ) {
 $_SESSION['loader'] += 2;
 
 # если все хорошо с помощью асоциативного массива выводим данные из таблицы
-# обернутые в div с классом textBox с тегом p для текста
+# обернутые в div с классом textBox с тегом a для текста
+
+# Шаблон для всех новостных карточек:
+	// <div id="internalContent">
+	// 	<article class="textBox">
+	// 		<div class="boxHeader">
+	// 			<img src="img/demka.png">
+	// 		</div>
+
+	// 		<div class="boxBody">
+	// 			<a href="#">
+					
+	// 			</a>
+	// 		</div>
+	// 	</article>
+
 while ( $row = mysqli_fetch_assoc($query) ) {
 	echo '
 	<article class="textBox">

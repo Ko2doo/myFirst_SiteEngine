@@ -1,7 +1,7 @@
 <?php top( 'Профайл' ) ?>
 	
 	<h1 class="headline-form">Редактировать</h1>
-	<div id="logIn">
+	<div id="formBlock">
 		<input type="password" placeholder="Новый пароль" id="password">
 		<input type="text" placeholder="Список IP" value="<?=$_SESSION['ip']?>" id="ip">
 
