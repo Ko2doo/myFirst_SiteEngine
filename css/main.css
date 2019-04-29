@@ -377,7 +377,7 @@ ul.inline li {
   display: inherit;
 }
 
-#content .block #form {
+#content .block #formBlock {
   max-width: 250px;
   width: 100%;
   padding: 25px 4px 12px;
@@ -409,7 +409,7 @@ ul.inline li {
   transition: all 0.3s ease-out;
 }
 
-#content .block #form input {
+#content .block #formBlock input {
   border: none;
   -webkit-border-radius: 12px;
           border-radius: 12px;
@@ -428,7 +428,7 @@ ul.inline li {
   transition: all 0.3s ease-out;
 }
 
-#content .block #form input:hover, #content .block #form input:focus {
+#content .block #formBlock input:hover, #content .block #formBlock input:focus {
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -436,7 +436,7 @@ ul.inline li {
           box-shadow: 0px 2px 2px -2px #a7a7a7;
 }
 
-#content .block #form button {
+#content .block #formBlock button {
   padding: 8px 12px;
   margin-bottom: 14px;
   max-width: inherit;
@@ -446,7 +446,7 @@ ul.inline li {
           box-shadow: 0px 2px 2px -2px #a7a7a7;
 }
 
-#content .block #form button:hover {
+#content .block #formBlock button:hover {
   color: #6e9294;
   -webkit-box-shadow: 0px 4px 4px -2px #6e9294;
           box-shadow: 0px 4px 4px -2px #6e9294;
