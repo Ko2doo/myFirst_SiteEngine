@@ -334,17 +334,17 @@ ul.inline li {
 }
 
 #wrapper .menu .link-wraper ul.list-link li, #wrapper .menu .link-wraper ul.list-link a {
-  font-size: 18px;
+  font-size: 16px;
   color: #a7a7a7;
   position: relative;
   vertical-align: -webkit-baseline-middle;
 }
 
 #content {
-  -webkit-box-flex: 4;
-  -webkit-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
   background: #2c2c2c;
 }
 
