@@ -8,9 +8,13 @@ if ($_POST['reviews_f']) {
 		message('Длина сообщения должна состовлять 10-200 символов');
 	}
 
-	# Записываем в БД
-	mysqli_query($CONNECT, 'INSERT INTO `reviews` VALUES ("", "'.$_SESSION['id'].'", "'.mysqli_real_escape_string($CONNECT, $_POST['message']).'")');
+	# запишем в переменную то что должно инжектиться в БД
+	$injectReviews = 'INSERT INTO `reviews` (`uid`, `text`) VALUES ("'.$_SESSION['id'].'", "'.mysqli_real_escape_string($CONNECT, $_POST['message']).'")';
 
+	# Записываем в БД
+	mysqli_query($CONNECT, $injectReviews);
+
+	//var_dump($injectReviews);
 
 		message('Сообщение отправлено');
 }
