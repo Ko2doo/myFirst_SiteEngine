@@ -4,8 +4,8 @@
 if ($_POST['reviews_f']) {
 	
 	# Ставим ограничение на кол-во отправляемых пользователями символов
-	if (strlen($_POST['message']) < 10 or strlen($_POST['message']) > 200 ) {
-		message('Длина сообщения должна состовлять 10-200 символов');
+	if (strlen($_POST['message']) < 10 or strlen($_POST['message']) > 400 ) {
+		message('Длина сообщения должна состовлять 10-400 символов');
 	}
 
 	# запишем в переменную то что должно инжектиться в БД
@@ -14,9 +14,10 @@ if ($_POST['reviews_f']) {
 	# Записываем в БД
 	mysqli_query($CONNECT, $injectReviews);
 
-	//var_dump($injectReviews);
+		//message('Сообщение отправлено');
 
-		message('Сообщение отправлено');
+		# редиректим на страницу с отзывами
+		go('allReviews');
 }
 
 ?>
