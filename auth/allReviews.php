@@ -3,14 +3,14 @@
 	// Функция подгрузки контента (без перезагрузки страницы) из файла revLoader.php
 	function load_reviews() {
 		// body func...
-		$.get('/revLoader', function( data ){
+		$.get('/revLoader', function(loadRev){
 			
 			// Обработчик данных из БД:
-			if ( data == 'empty' ){
+			if ( loadRev == 'empty' ){
 			 	$('.reviews').text('История пуста'); // то запишем в него текст что История пуста
 			}
-			else if ( data != 'end' ){
-			 	$('.reviews').append(data);
+			else if ( loadRev != 'end' ){
+			 	$('.reviews').append(loadRev);
 			}
 		
 		});
