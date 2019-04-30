@@ -144,7 +144,8 @@ function top($title) {
 						
 							<li><a href="/logout">Выход</a></li>
 							<li><a href="/profile">Профиль</a></li>
-							<li><a href="/reviews">Отзывы</a></li>
+							<li><a href="/reviews">Написать отзыв</a></li>
+							<li><a href="/allReviews">Страница отзывов</a></li>
 							<li><a href="/history">История</a></li>
 					';
 				}
