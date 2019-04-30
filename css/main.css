@@ -694,3 +694,69 @@ ul.inline li {
   font-size: 16px;
   color: #69a3b5;
 }
+
+#content .block .reviews {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#content .block .reviews .reviewCard {
+  max-width: 330px;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  padding: 8px 22px 16px 22px;
+  margin-bottom: 20px;
+  background: #353535;
+  -webkit-box-shadow: 0px 12px 4px -11.5px #a7a7a7;
+          box-shadow: 0px 12px 4px -11.5px #a7a7a7;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#content .block .reviews .reviewCard:hover {
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  -webkit-box-shadow: 0px 12px 8px -12.5px #6e9294;
+          box-shadow: 0px 12px 8px -12.5px #6e9294;
+}
+
+#content .block .reviews .reviewCard span.sendName {
+  font-size: 22px;
+  font-weight: 550;
+  color: #a2a2a2;
+}
+
+#content .block .reviews .reviewCard p.reviewsText {
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 20px;
+  text-align: justify;
+}
