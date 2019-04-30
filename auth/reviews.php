@@ -6,7 +6,7 @@
 	<input type="text" placeholder="E-mail" value="<?=$_SESSION['email']?>" id="email">
 	<span class="messTitle">Введите сообщение:</span>
 		<textarea id="message" placeholder="текст сообщения" required></textarea>
-		<button onclick="post_query('add', 'reviews', 'message')" class="btn-default">Добавить отзыв</button>
+		<button onclick="post_query('add', 'reviews', 'email.message')" class="btn-default">Добавить отзыв</button>
 	</div>
 
 
